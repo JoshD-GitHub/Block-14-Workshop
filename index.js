@@ -11,7 +11,7 @@ const inputArray = [2, 4, 6, 8, 10, 11, 12];
 const oddNumbers =[];
 
 // loop through the array
-for (i = 0; i < inputArray.length; i++) {
+for (let i = 0; i < inputArray.length; i++) {
     // compare index to index % 2 !== 0 using IF statement
     if (inputArray[i] % 2 !== 0) {
         // push to an new array if applicable
@@ -40,9 +40,9 @@ const vowelArray = ['a', 'e', 'i', 'o', 'u'];
 let vowelCount = 0;
 
 // loop through the inputString
-for (i = 0; i < inputString.length; i++) { // i loops through inputString
+for (let i = 0; i < inputString.length; i++) { // i loops through inputString
     // loop through the vowelArray
-    for (j = 0; j < vowelArray.length; j++) { // j loops through vowelArray
+    for (let j = 0; j < vowelArray.length; j++) { // j loops through vowelArray
         // compare string index to vowel index
         if (inputString[i] === vowelArray[j]) {
             // increment vowel count when applicable
@@ -71,7 +71,7 @@ const inputArray = [1, -1, 2, -3, 5, -8, 13];
 const expectedArray = [];
 
 // loop through the array in reverse
-for (i = inputArray.length -1; i >= 0; i--) {
+for (let i = inputArray.length -1; i >= 0; i--) {
     // push the index to a new array
     expectedArray.push(inputArray[i]);
 };
@@ -80,7 +80,7 @@ console.log(expectedArray)
 */
 
 
-
+/*
 //      FIZZ BUZZ
 
 
@@ -88,13 +88,13 @@ console.log(expectedArray)
 const oneHundred = [];
 
 // create a for loop that prints a number from 1 - 100
-for (i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     // push to an empty array
     oneHundred.push([i]);
 };
 
 // use another for loop to iterate through the count array
-for (j = 0; j < oneHundred.length; j++) {
+for (let j = 0; j < oneHundred.length; j++) {
     // compare if number is divisable to 3 AND 5 first
     if (oneHundred[j] % 3 === 0 && oneHundred[j] % 5 === 0) {
         // splice to the count array to replace the index
@@ -112,3 +112,4 @@ for (j = 0; j < oneHundred.length; j++) {
 
 console.log(oneHundred);
 
+*/
